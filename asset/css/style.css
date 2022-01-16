@@ -1,0 +1,661 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/* Starting Coding */
+
+.header{
+    height: 70px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+.header__navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 80px;
+}
+.header__navbar__list{
+
+}
+.header__navbar__item{
+    list-style-type: none;
+    line-height: 70px;
+    display: inline-block;
+}
+.header__navbar__item__link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 15px 18px;
+}
+.blo{
+    font-size: 2.7rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    font-style: italic;
+}
+.header__navbar__item__link:hover{
+    color: #e32418;
+}
+
+.header__navbar__item__link-icon{
+    font-size: 1.9rem;
+}
+
+/* SLider */
+.slider{
+    margin-top: 70px;
+    position: relative;
+}
+.slider__gymso__fitness{
+
+}
+.slider__img{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    filter: brightness(0.3);
+}
+.slider__body{
+    position: absolute;
+    bottom:291px;
+    width: 100%;
+    /* height: 100%; */
+    text-align: center;
+    animation: bottomtoTop ease 2s;
+
+}
+.slider__body__dsc{
+    color: #909090;
+    padding: 21px 0;
+    font-size: 2.4rem;
+    font-style: italic;
+    letter-spacing: 0.4rem;
+   
+
+}
+.slider__heading__swap{
+    color: #fff;
+    font-size: 2.4rem;
+    line-height: 1.6;
+    padding: 0 0 19px 0;
+    font-weight: 800;
+    font-style: italic;
+   
+
+    letter-spacing: 0.8rem;
+}
+.slider__heading{
+
+}
+
+.slider__btn__swap{
+    animation: bottomtoTop step-end 1s;
+   
+
+}
+.sli__btn__nobor:hover{
+    color: #e32418;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+.sli__btn__nobor{
+    background-color: transparent;
+    color: #fff;
+    border: none;
+}
+.sli__btn__bor{
+ 
+    background-color: transparent;
+    border: 1px solid #e32418;
+    color: #e32418;
+    border: none;
+}
+.sli__btn__bor:hover{
+    background-color: #fff;
+    cursor: pointer;
+    border :none;
+}
+.slider__btn{
+    padding: 15px 22px;
+    font-size: 1.4rem;
+    margin: 0 7px 0 8px;
+    text-transform: uppercase;
+}
+@keyframes bottomtoTop{
+    from{
+        bottom:0;
+        opacity: 0;
+    }
+    to{
+        top:211px;
+        opacity: 1;
+    }
+}
+
+/* content */
+.content__section{
+
+    padding: 24px 0;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+/* Hour */
+
+.hour{
+    background-color: #212529;
+    
+    margin: -5px 0 0 0;
+
+}
+.hour__list{
+    display: flex;
+    animation: bottomtoTop ease 2s;
+
+}
+.hour__left{
+    list-style: none;
+    width: 49.999%;
+    padding: 0 32px;
+}
+.hour__heading{
+
+}
+.hour__left__dsc{
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 1.4;
+  
+    margin: 27px 0 0 0;
+}
+.hour__left__dsc2{
+    color: #666262;
+    margin: 7px 0 0 0;
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+.hour__left_btn{
+    margin: 15px 0 0 0;
+    padding: 15px 0;
+    font-size: 1.6rem;
+    width: 100%;
+    background-color: #e32418;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+.hour__left_btn:hover{
+    color: #e32418;
+    background-color: #fff;
+    cursor: pointer;
+}
+.hour__right{
+    list-style: none;
+    padding: 0 32px;
+    width: 49.999%;
+    position: relative;
+}
+.hour__right::after{
+    position: absolute;
+    content: "";
+    display: block;
+    left: 0;
+    top: 0;
+    height: 231px;
+    width: 1px;
+    background-color: #666262;
+
+}
+.hour__heading{
+    font-size: 2.4rem;
+    color: #fff;
+}
+
+.hour__right__list{
+    margin: 19px 0 0 5px;
+}
+.hour__right__item{
+    list-style: none;
+}
+.hour__right_-dsc{
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 7px 0;
+}
+.hour__right__item{
+
+}
+
+.hour__right__dsc2{
+    font-size: 1.4rem;
+    color: #666262;
+    
+}
+.hour__right__item{
+
+}
+
+/* Profile */
+
+.profile{
+    background-color: #f9f9f9;
+    margin: 69px 0 0 0;
+}
+.profile__list{
+    display: flex;
+}
+.profile__item{
+    list-style: none;
+  
+    padding: 0 8px;
+}
+.w50{
+    width: 50%;
+}
+.w33{
+    width: 25%;
+}
+.profile__dsc{
+    color: #666262;
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+.profile__dsc1{
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin: 12px 0 0 0;
+}
+.profile__dsc1 span {
+    color: #474747;
+    font-weight: 600;
+}
+.profile__dsc1 span:hover{
+    color: orangered;
+    cursor: pointer;
+}
+.profile__item{
+
+}
+.profile__body{
+
+}
+.profile__body__img{
+    width: 100%;
+}
+.profile__body_swap{
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 2px 2px #ccc;
+}
+.pp-wap{
+    font-size: 2rem;
+    margin: 13px 2px 12px 17px;
+}
+.profile__name{
+
+}
+.profile__heading{
+    font-size: 2.4rem;
+    margin: 0 0 21px 0;
+}
+.profile__body__dsc{
+    font-size: 1.4rem;
+    line-height: 1.6;
+    padding: 0 0 9px 19px;
+}
+.profile__contact{
+    margin: 13px 0 0 50px;
+}
+
+
+.profile__contact__link{
+    text-decoration: none;
+    display: block;
+    font-size: 2rem;
+    padding: 0 0 7px 0;
+    color: #666262;
+}
+.profile__contact__link:hover{
+        color:    orangered;
+}
+.profile__contact__icon{
+
+}
+
+/* get */
+
+.get{
+    margin: 69px 0 0 0;
+}
+.get__heading{
+    text-align: center;
+    font-size: 2.4rem;
+    padding: 14px 0;
+    color: #909090;
+}
+.get__heading1{
+    text-align: center;
+    font-size: 3.2rem;
+    padding: 18px 0 41px 0px;
+    color: #212529;
+}
+.get__heading{
+
+}
+.get__list{
+    display: flex;
+ 
+}
+.get__item{
+    width: 33.333%;
+    
+    box-shadow: 0 2px 2px #ccc;
+    list-style: none;
+    margin: 0 11px;
+    
+    border-radius: 20px;
+
+}
+
+.get__img{
+    width: 100%;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+.get__item__body{
+    padding: 9px 22px 17px 22px;
+    display: flex;
+}
+.get__body_left{
+
+}
+.get__item__heading{
+    font-size: 1.9rem;
+    padding: 6px 0;
+}
+.get__item__dsc{
+    font-size: 1.6rem;
+    padding: 5px 0;
+    color: #212529;
+}
+.get__item__dsc span {
+    font-weight: 600;
+    color: #909090;
+}
+.get__item__dsc1{
+    font-size: 1.4rem;
+    line-height: 1.4;
+}
+.get__item__right{
+
+}
+.get__btn{
+    border: none;
+    padding: 14px 11px;
+    color: #fff;
+    background-color: #f13a11;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 29px;
+}
+
+/* time */
+.time{
+    background-color: #171819;
+    margin: 68px 0 0 0;
+    padding: 0 0 56px 0;
+}
+.time__dsc{
+    color: #898989;
+    text-align: center;
+    font-size: 2rem;
+    margin: 35px 0;
+}
+.time__heading{
+    text-align: center;
+    color: #fff;
+    font-size: 3.4rem;
+    margin: 1px 0 52px 0;
+}
+
+.time__list{
+    display: flex;
+}
+.time__item{
+    list-style: none;
+    width: 14.222%;
+    text-align: center;
+}
+.time__icon{
+    font-size: 2.4rem;
+}
+.time__item__item{
+    border: 0.1px solid #3d3333 ;
+}
+.time__item__swap{
+    border: 1px solid #3d3333;
+    padding: 14px 3px;
+}
+.pd23{
+    padding: 27px 0;
+}
+.pd14{
+    padding: 14px 0;
+} 
+.fz13{
+    font-size: 1.3rem;
+
+}
+.br1{
+    background-color: #f13a11;
+    color: #fff;
+}
+.pd18{
+    padding: 18px 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.trans{
+    color: transparent;
+}
+.time__item__heading{
+    /* color: #fff; */
+    font-size: 1.5rem;
+    padding: 0 0 8px 0;
+}
+.hdff{
+    color: #fff;
+}
+.dscff{
+    color:   #898989;
+}
+
+.time_item__dsc{
+    font-size: 1.3rem;
+    /* color: #909090; */
+}
+
+.contact{
+
+}
+
+.contact__list{
+    display: flex;
+
+}
+
+.contact_item{
+    width: 49.99%;
+    list-style: none;
+}
+
+.contact__heading{
+
+}
+
+.contact__input{
+    width: 71%;
+    padding: 8px 4px;
+    font-size: 1.4rem;
+    margin: 5px 0;
+}
+
+.contact__btn{
+    width: 71%;
+    padding: 10px 0;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    outline: none;
+    margin: 10px 0 0 0;
+
+
+}
+.contact__btn:hover{
+    background-color: #f13a11;
+    cursor: pointer;
+}
+
+.contact_item{
+
+}
+
+.contact__heading{
+    font-size: 2.4rem;
+    padding: 29px 0;
+    font-style: italic;
+    letter-spacing: 0.2rem;
+}
+
+.contact__dsc{
+    font-size: 1.6rem;
+    padding: 0 0 17px 0;
+    color: #797676;
+}
+
+.contact__icon{
+    color: #f13a11;
+}
+.map__img{
+    width: 100%;
+    border-radius: 22px;
+
+}
+.bancomuon{
+    padding: 6px 0;
+    font-size: 1.7rem;
+    color: hotpink;
+    text-decoration: none;
+}
+.byme{
+    text-align: center;
+    font-size: 1.9rem;
+    margin: color 0;
+    margin: 19px 0;
+    color: coral;
+}
+
+
+/* modal */
+
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.modal.open{
+    display: flex;
+}
+.modal__overlay{
+    width: 100%;height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+}
+.modal__body{
+    position: absolute;
+    
+}   
+
+.membership{
+    width: 531px;
+    max-width: 990px;
+    background-color: #fff;
+    text-align: center;
+    padding: 26px 30px;
+}
+.membership__heading{
+    font-size: 2.4rem;
+    margin: 0 0 27px 0;
+}
+.member_input{
+    width: 100%;
+    padding: 10px 7px;
+    margin: 0 0 10px 0px;
+    font-size: 1.4rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+}
+.member__btn{
+    width: 100%;
+    padding: 12px 0;
+    margin: 13px 0 9px 0px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+.member__icon{
+    font-size: 3.4rem;
+    padding: 8px 10px;
+}
+.member__icon:hover{
+    background-color: #f13a11;
+    cursor: pointer;
+    color: #fff;
+}
+.btnlogin{
+    border: none;
+    padding: 12px 17px;
+    color: #fff;
+    background: #000;
+    border-radius: 16px;
+    font-size: 1.4rem;
+    margin: 0 0 0 11px;
+}
+.btnlogin:hover{
+    background-color: #f13a11;
+    cursor: pointer;
+    color: #fff;
+}
+.mem__icon{
+    text-align: right;
+}
+.member__btn:hover{
+    background-color: #f13a11;
+    cursor: pointer;
+}
